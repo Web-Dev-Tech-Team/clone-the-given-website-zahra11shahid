@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 01-fa22-bce-017</title>
+	
+	
+	
+</head>
+<style>
+					/*header*/
+	.logo {
+    width: 200px;
+    padding-top: 10px;
+        
+}
+.setting-icon{
+	height: 20px;
+	width: 50px;
+	padding-top: 20px;
+}
+
+
+.links{
+    margin-right: 100px;
+    margin-left:100px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 400px;
+    align-items: center;
+	
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    background-color: white;
+    height:70px;    
+}
+
+					/*general*/
+a{
+    color: rgb(122, 118, 118);
+    text-decoration: none;
+    font-family: Arial;
+    }
+div{
+	color: grey;
+	font-family: arial;
+	font-size: 14px;
+}
+    
+a:hover{    
+         opacity: 0.5;    
+    }
+p{
+	color: rgb(122, 118, 118);
+	font-style: arial;
+	font-size: 15px;
+}
+
+					/*content*/
+.envelope-icon{
+	height: 24px;
+}
+.phone-icon{
+	height:24px;
+	margin-top: 30px;
+}
+.alltext{
+	margin-left: 60px;
+	margin-right: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+.submit{
+	
+	margin-top: 25px;
+	color: grey;
+	padding: 5px;
+	
+}
+.textarea{
+	font-family: arial;
+	height: 173px;
+    width: 353px;
+	border-top:0 ;
+	border-color: gray;
+	border-width: 2px;
+	margin-top: 30px;
+}
+.content{
+	
+	margin-top:150px;
+	justify-content: center;
+	
+}
+.svg {
+    width: 400px;
+	height: 300px;
+	flex: 1;
+}
+.content-icons{
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+	min-width: 30px;
+}
+
+.namebox,
+.emailbox{
+	padding: 5px;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	width: 150px;
+}
+.namebox{
+	margin-right: 40px;
+}
+				/*end-content*/
+.ending-content{
+	background-color: rgb(226, 202, 212);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-bottom: 40px;
+	z-index: -1;
+	
+		
+}
+.our-recent-works,
+.contact,
+.go-to{
+	display: flex;
+	flex-direction: column;
+	align-items: top;
+	margin: 0;
+}
+
+	
+				/*footer*/
+.footer{
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: rgb(226, 202, 212);
+	align-items: center;
+	justify-content: space-around;
+	border-top: 2px solid gray;
+	box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+.endtitle{
+	font-weight: bold;
+}
+.linkedin-icon,
+.google-icon,
+.flip-icon,
+.pinterest-icon,
+.facebook-icon,
+.youtube-icon,
+.twitter-icon{
+	height: 15px;
+	
+}
+.favicon{
+	margin-left: 7px;
+}
+
+
+</style>
+<body>
+	<div class="header" >
+		<div><img src="svg/logo-color-schemes-coverage-book-palette.jpg" class="logo"></div>
+		
+			<div class="links">
+				
+				<div><a href="home.html" target="_self">Home </a></div>
+	
+				<div><a href="links/contactus.html" target="_blank">Contact Us</a></div>
+	
+				<div><a href="links/aboutus.html" target="_blank">About Us</a></div>
+	
+				<div><a href="links/portfolio.html" target="_blank">Portfolio</a></div>	
+			</div>
+		<div> <img src="icons/settings.svg" class="setting-icon"></div>
+	
+	</div>
+
+
+	<div class="content" 
+		style="display: flex;
+		flex-direction: row;">
+
+		<div class="content-icons">
+			<img src="icons/envelope.svg" class="envelope-icon">
+			<img src="icons/phone-call.svg" class="phone-icon">
+		</div>
+
+		<div class="alltext">
+			<div class="textbox">
+				<input class="namebox" type="text" placeholder="Enter your name">
+				<input class="emailbox" type="text" placeholder="Enter your E-mail">
+			</div>
+			<textarea class="textarea" placeholder="Enter your review here..."></textarea>
+			<button class="submit">Submit</button>
+		
+		</div>
+		<div>
+		<img src="svg/Audiobook (1).svg" alt="audio books" class="svg"></div>
+	</div>
+
+
+	<div class="ending-content">
+		<div class="go-to">
+			<div><p style="font-size:19px ;
+				color: rgb(87, 83, 83) ;font-family: arial;">Go To</p></div>
+			
+			<div>Home</div>
+	
+			<div>Contact Us</div>
+	
+			<div>About Us</div>
+	
+			<div>Portfolio</div>
+		</div>
+		<div class="our-recent-works">
+			<div><p style="font-size:19px ;
+				color: rgb(87, 83, 83); font-family: arial;">Our Recent Works</p></div>
+
+			<div>Thousand Autumns</div>
+
+			<div>Cherry Blossoms</div>
+
+			<div>To Live As A Villain</div>
+
+			<div>Reborn</div>
+		</div>
+		<div class="contact">
+			<div><p style="font-size:19px ;
+				color: rgb(87, 83, 83);font-family: arial;">Contact Us</p></div>
+
+			<div>Instagram</div>
+
+			<div>Twitter</div>
+
+			<div>Facebook</div>
+		</div>
+
+	</div>
+
+
+
+<div class="footer">
+
+	<div class="favicon">
+		<img src="icons/linkedin.svg" class="linkedin-icon">
+		<img src="icons/phone-flip.svg" class="flip-icon">
+		<img src="icons/facebook.svg" class="facebook-icon">
+		<img src="icons/google.svg" class="google-icon">
+		<img src="icons/twitter.svg" class="twitter-icon">
+		<img src="icons/youtube.svg" class="youtube-icon">
+		<img src="icons/pinterest.svg" class="pinterest-icon">
+ 	</div>
+	<div>
+		<p class="endtitle">Coverage Book</p>
+	</div>
+	<div>
+		<p class="learn-more">Learn More</p>
+		
+	</div>
+</div>
+</body>
+</html>
